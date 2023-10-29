@@ -48,18 +48,17 @@ overflow-x: hidden;
   ::-webkit-scrollbar-track {
     display: block;
     width: 15px;
-    background-color: transparent;
+    background-color: #030014;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: var(--brownDark) ;
+    background-color: rgba(255, 255, 255, 0.164) ;
     width: 10px;
     border-radius: 10px;
 
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(64, 13, 1, 0.72);
-   
+    background-color: white;
   }
 
 }

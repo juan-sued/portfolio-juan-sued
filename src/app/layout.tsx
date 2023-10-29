@@ -4,13 +4,14 @@ import { Poppins } from 'next/font/google'
 import 'animate.css'
 import { ReactNode } from 'react'
 import Providers from './providers'
+import Header from '@/components/layout/Header'
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['200', '300', '400', '500', '600', '700'],
 })
 export const metadata: Metadata = {
-  title: 'Juan Sued - Devloper',
+  title: 'EventHorizon by Juan Sued',
   description: 'Eficiência em peso',
 }
 
@@ -18,10 +19,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br" >
       <body
-        className={`${poppins.className} bg-red-300   dark:bg-blueTheme-500  text-zinc-900 weig dark:text-slate-50
+        className={`${poppins.className}  bg-red-300   dark:bg-blueTheme-500  text-zinc-900 weig dark:text-slate-50
         `}
       >
         <Providers>
+          <Header />
           {children}
         </Providers>
 

@@ -8,25 +8,26 @@ export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   function alterTheme() {
-    if(theme === 'dark' ){ 
-      setTheme('light')} 
-    else{
+    if (theme === 'dark') {
+      setTheme('light')
+    }
+    else {
       setTheme('dark')
     }
   }
   return (
-    <div>
+    <div className='scale-95'>
       <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger  asChild>
-          <div className="tooltip">
-          <SwitcherSunAndMoon checked={theme === 'dark'? true : false} onChange={alterTheme}/>
-          </div>
-        </TooltipTrigger>
-        <TooltipContent className='bg-white dark:bg-white dark:text-brownDarkBrand-100'>
-          <p>Mudar tema</p>
-        </TooltipContent>
-      </Tooltip>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <div className="tooltip ">
+              <SwitcherSunAndMoon checked={theme === 'dark' ? true : false} onChange={alterTheme} />
+            </div>
+          </TooltipTrigger>
+          <TooltipContent className='bg-white  text-purple-950'>
+            <p>Mudar tema</p>
+          </TooltipContent>
+        </Tooltip>
       </TooltipProvider>
     </div>
   );
