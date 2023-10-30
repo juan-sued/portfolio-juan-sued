@@ -1,17 +1,8 @@
 import ThemeSwitcher from "@/components/shared/ThemeSwitcher";
 import LogoAndName from "./LogoAndName";
 import MenuNavBar from "./MenuNavBar";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button";
+import MenuMobile from "./MenuMobile";
+
 export default function Header() {
   return (
     <>
@@ -21,30 +12,7 @@ export default function Header() {
         <div className="hidden md:block">
           <ThemeSwitcher />
         </div>
-        <nav className="menuMobile block md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline">Open</Button>
-            </SheetTrigger>
-            <SheetContent className="bg-slate-700 bg-opacity-50 shadow transition delay-500  border-0">
-              <SheetHeader>
-                <SheetTitle>Menu</SheetTitle>
-                <SheetDescription>
-                  Make changes to your profile here. Click save when you're done.
-                </SheetDescription>
-              </SheetHeader>
-              <div className="grid gap-4 py-4">
-
-              </div>
-              <SheetFooter>
-                <SheetClose asChild>
-                  <Button type="submit">Save changes</Button>
-                </SheetClose>
-              </SheetFooter>
-            </SheetContent>
-          </Sheet>
-
-        </nav>
+        <MenuMobile />
 
       </header>
     </>
