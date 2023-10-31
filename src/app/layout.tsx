@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt-br" >
       <body
         className={`${poppins.className}  bg-red-300   dark:bg-blueTheme-500  text-zinc-900 weig dark:text-slate-50
+        overflow-hidden
         `}
       >
         <Providers>

@@ -12,6 +12,7 @@ import {
 import ButtonsMenu from "./ButtonsMenu"
 import { Button } from "@/components/ui/button"
 import { Smartphone } from "lucide-react"
+import Link from "next/link"
 
 
 export default function ContentMenu() {
@@ -29,7 +30,7 @@ export default function ContentMenu() {
       <ButtonsMenu />
       <SheetFooter>
         <SheetClose asChild>
-          <a href={LINK_WHATSAPP} target="_blank" rel="noopener noreferrer">
+          <Link href={LINK_WHATSAPP} target="_blank" rel="noopener noreferrer">
             <Button variant="outline" type="submit" >
               <div className="row flex gap-2 justify-center items-center">
                 <Smartphone />
@@ -38,11 +39,9 @@ export default function ContentMenu() {
                 </h4>
               </div>
             </Button>
-          </a>
-
+          </Link>
         </SheetClose>
       </SheetFooter>
-
     </SheetContent>
 
 

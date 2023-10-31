@@ -15,13 +15,16 @@ export default function ThemeSwitcher() {
       setTheme('dark')
     }
   }
+
+
+  console.log(theme)
   return (
     <div className='scale-95'>
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
             <div className="tooltip ">
-              <SwitcherSunAndMoon checked={theme === 'dark' ? true : false} onChange={alterTheme} />
+              <SwitcherSunAndMoon checked={theme === 'light' ? false : true} onChange={alterTheme} />
             </div>
           </TooltipTrigger>
           <TooltipContent className='bg-white  text-purple-950'>

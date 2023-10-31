@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function LogoAndName() {
   return (
     <>
-      <div className="flex space-x-2  w-fit items-center">
+      <div className="flex space-x-2 w-1/3 items-center">
         <Image
           src='/assets/logo.png'
           width="1080"
@@ -12,7 +12,7 @@ export default function LogoAndName() {
           alt="Ir para Home"
           loading="eager"
         />
-        <h4 className='text-sm '>
+        <h4 className='text-sm'>
           <strong className="text-lg">
             EventHorizon
           </strong>
