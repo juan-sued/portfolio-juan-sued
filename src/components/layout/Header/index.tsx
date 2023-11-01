@@ -13,7 +13,6 @@ export default function Header() {
           <ThemeSwitcher />
         </div>
         <MenuMobile />
-
       </header>
     </>
   )

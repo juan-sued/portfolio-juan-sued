@@ -4,7 +4,7 @@ export default function ButtonsMenu
   () {
   return (
     <>
-      <nav >
+      <nav className="grid gap-4 py-4" >
         <ul className="headerNav bg-white bg-opacity-5 border border-white border-opacity-5 rounded-md flex flex-col py-6 space-y-6   justify-start items-center shadow-lg">
           <ListItem title="Início" link="#" />
           <ListItem title="Tecnologias" link="#" />
