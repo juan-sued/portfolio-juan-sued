@@ -1,5 +1,4 @@
 import SwitcherSunAndMoon from '@/components/shared/SwitcherSunAndMoon/SwitcherSunAndMoon'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -11,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 
-import { CrownIcon, LogIn, Settings, User, User2 } from 'lucide-react'
+import { CrownIcon, LogIn, Menu, Settings, User } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
 
@@ -30,23 +29,11 @@ export function MenuMobile() {
       <div className=" flex lg:hidden justify-end">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className="  bg-transparent  hover:bg-transparent dark:bg-transparent  rounded-full  w-12 h-12">
-              <Avatar className="h-12 w-12 ">
-                <AvatarImage
-                  src="https://api.minimalavatars.com/avatar/random/svg"
-                  alt="Avatar Image"
-                />
-                <AvatarFallback className="bg-pinkTheme-500 dark:bg-blueTheme-500">
-                  <User2 />
-                </AvatarFallback>
-              </Avatar>
+            <Button className="  bg-transparent  hover:bg-transparent dark:bg-transparent  rounded-full   ">
+              <Menu color="white" size={25} />
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent
-            className="relative top-1 w-56 "
-            align="end"
-            forceMount
-          >
+          <DropdownMenuContent className=" w-56 " align="end" forceMount>
             <DropdownMenuGroup>
               <Link href="/">
                 <DropdownMenuItem className="cursor-pointer">
