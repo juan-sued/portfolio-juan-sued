@@ -14,7 +14,6 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import { DollarSign } from 'lucide-react'
-import ThemeSwitcher from '@/components/shared/ThemeSwitcher'
 
 const contact: { title: string; href: string; description: string }[] = [
   {
