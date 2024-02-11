@@ -1,37 +1,17 @@
 'use client'
 
-import { useTheme } from 'next-themes';
-import SwitcherSunAndMoon from "./SwitcherSunAndMoon/SwitcherSunAndMoon";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/tooltip';
+import { useTheme } from 'next-themes'
+import SwitcherSunAndMoon from './SwitcherSunAndMoon/SwitcherSunAndMoon'
 
 export default function ThemeSwitcher() {
-  const { theme, setTheme } = useTheme();
-
+  const { theme, setTheme } = useTheme()
   function alterTheme() {
     if (theme === 'dark') {
       setTheme('light')
-    }
-    else {
+    } else {
       setTheme('dark')
     }
   }
 
-
-  console.log(theme)
-  return (
-    <div className='scale-95'>
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <div className="tooltip ">
-              <SwitcherSunAndMoon checked={theme === 'light' ? false : true} onChange={alterTheme} />
-            </div>
-          </TooltipTrigger>
-          <TooltipContent className='bg-white  text-purple-950'>
-            <p>Mudar tema</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    </div>
-  );
+  return <SwitcherSunAndMoon onChange={alterTheme} />
 }
