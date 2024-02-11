@@ -1,13 +1,11 @@
-import axios from 'axios';
+import axios from 'axios'
 
-const axiosI = axios.create({
-  baseURL: ''
-});
-const axiosBasic = axios.create({
-  baseURL: 'http://'
-});
-const axiosWhatsAppContact = axios.create({
-  baseURL: ''
-});
+export function getAPICLient() {
+  const DEV_URL = 'http://localhost:3000/'
 
-export { axiosI, axiosBasic, axiosWhatsAppContact };
+  const api = axios.create({
+    baseURL: DEV_URL,
+  })
+
+  return api
+}

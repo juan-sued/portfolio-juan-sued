@@ -1,21 +1,19 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function LogoAndName() {
   return (
     <>
-      <div className="flex space-x-2 w-1/3 items-center">
+      <div className="flex gap-2 items-center justify-start relative left-0 w-0">
         <Image
-          src='/assets/logo.png'
+          src="/assets/logo.png"
           width="1080"
           height="1080"
-          className="animate__animated animate__fadeInLeftBig w-16"
+          className="animate__animated animate__fadeInLeftBig w-16 min-w-[64px]"
           alt="Ir para Home"
           loading="eager"
         />
-        <h4 className='text-sm'>
-          <strong className="text-lg">
-            EventHorizon
-          </strong>
+        <h4 className="text-sm">
+          <strong className="text-lg">EventHorizon</strong>
           <br />
           by Juan Sued
         </h4>

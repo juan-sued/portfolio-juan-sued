@@ -1,24 +1,42 @@
-import ThemeSwitcher from "@/components/shared/ThemeSwitcher";
-import LogoAndName from "./LogoAndName";
-import MenuNavBar from "./MenuNavBar";
-import MenuMobile from "./MenuMobile";
+'use client'
+import { useEffect, useState } from 'react'
+import { getScroll } from '@/utils/index'
+import { MenuMobile } from './MenuMobile'
+import { cn } from '@/lib/utils'
+import LogoAndName from './LogoAndName'
+import { MenuDesktop } from './MenuDesktop'
+import ThemeSwitcher from '@/components/shared/ThemeSwitcher'
 
 export default function Header() {
+  const [scrollHeight, setScrollHeight] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollHeight(getScroll)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
     <>
-      <header className="px-5 py-6 bg-opacity-10 backdrop-blur-md fixed top-0 left-0 w-full z-10 flex justify-between" >
+      <header
+        className={cn(
+          'p-6   fixed top-0 bg-transparent left-0 w-full flex justify-between z-10   transition-all  h-[96px] animate__animated animate__fadeInDown  ',
+          scrollHeight > 1
+            ? 'drop-shadow-lg dark:bg-opacity-90 bg-opacity-70 backdrop-blur-md '
+            : 'bg-transparent backdrop-blur-none dark:bg-transparent',
+        )}
+      >
         <LogoAndName />
-        <MenuNavBar />
-        <div className="hidden md:flex md:w-1/3 md:justify-end">
+        <MenuDesktop />
+        <div className="hidden lg:flex relative w-0 right-[80px]">
           <ThemeSwitcher />
         </div>
+
         <MenuMobile />
       </header>
     </>
   )
-
-};
-
-
-
-
+}
