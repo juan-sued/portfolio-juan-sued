@@ -3,9 +3,9 @@ import Image from 'next/image'
 export default function BackGroundImage() {
   return (
     <>
-      <section className="overflow-hidden absolute top-0  left-0 right-0 w-full h-full z-[-1] animate__animated animate__fadeIn ">
+      <section className="overflow-visible relative top-0  left-0 right-0 w-full h-0 z-[-1] animate__animated animate__fadeIn ">
         <video
-          className="w-full h-full object-cover hidden dark:block "
+          className="w-screen h-screen object-cover hidden dark:block "
           preload="false"
           autoPlay
           muted
@@ -14,12 +14,14 @@ export default function BackGroundImage() {
           typeof="video/webm"
         />
 
-        <Image
-          className="w-full h-full object-cover block dark:hidden  "
-          src="/assets/ondas.gif"
-          alt="Meu GIF"
-          layout="fill"
-        />
+        <div className="w-screen h-screen relative dark:hidden">
+          <Image
+            className="w-full h-full object-cover"
+            src="/assets/ondas.gif"
+            alt="Meu GIF"
+            layout="fill"
+          />
+        </div>
       </section>
     </>
   )
