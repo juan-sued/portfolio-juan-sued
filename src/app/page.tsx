@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
         </section>
         <section className="w-full flex justify-center">
-          <div className="contentIntroduction mt-[78px] sm:mt-[60px] w-[90%] max-w-[600px] h-96 p-2  backdrop-blur-md  rounded-3xl shadow-shadow-border-white  border border-white border-opacity-10">
+          <div className="contentIntroduction mt-[78px] sm:mt-[60px] w-[90%]  h-96 p-2  backdrop-blur-md  rounded-3xl shadow-shadow-border-white  border border-white border-opacity-10">
             <div className="contentIntroduction w-full h-full p-6 blur-radial-gradient border rounded-2xl border-white border-opacity-10">
               <section className="w-full flex justify-center">
                 <div className="contentIntroduction  p-2  backdrop-blur-md  rounded-full shadow-shadow-border-white  border border-white border-opacity-10">
