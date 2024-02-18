@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className}  bg-indigo-100  dark:bg-blueTheme-500  text-zinc-900 weig dark:text-slate-50 
+        className={`${poppins.className}  bg-[#ADD8E6]  dark:bg-blueTheme-500  text-zinc-900 weig dark:text-slate-50 
         `}
       >
         <Providers>
