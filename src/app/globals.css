@@ -74,6 +74,13 @@
 }
 
 
+.lightBackground{
+  background: linear-gradient(to bottom, transparent, transparent), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(173, 216, 230, 1)), url('/assets/ondas.gif');
+  background-size: cover;
+
+
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;

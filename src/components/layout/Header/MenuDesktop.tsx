@@ -14,39 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import { DollarSign } from 'lucide-react'
-
-const contact: { title: string; href: string; description: string }[] = [
-  {
-    title: 'WhatsApp',
-    href: 'https://w.app/yAmfrN',
-    description: 'Fale comigo pelo WhatsApp',
-  },
-  {
-    title: 'Linkedin',
-    href: 'https://www.linkedin.com/in/juan-sued/',
-    description: 'Me siga no Likedin',
-  },
-  {
-    title: 'Instagram',
-    href: 'https://www.instagram.com/juan.sued/',
-    description: 'Acesse meu instagram.',
-  },
-  {
-    title: 'Github',
-    href: 'https://github.com/juan-sued',
-    description: 'Veja meus projetos.',
-  },
-  {
-    title: 'Email',
-    href: 'mailto:juansued19@gmail.com?subject=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento',
-    description: 'juansued19@gmail.com',
-  },
-  {
-    title: 'Solicitar orçamento pelo site',
-    href: '#budget',
-    description: 'Formulário contendo suas solicitações de orçamento.',
-  },
-]
+import { contactList } from '@/data/contact'
 
 export function MenuDesktop() {
   return (
@@ -56,7 +24,7 @@ export function MenuDesktop() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Serviços</NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-blueTheme-500 bg-opacity-70  backdrop-blur-md     ">
+              <NavigationMenuContent className="bg-opacity-70  backdrop-blur-md     ">
                 <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
                     <NavigationMenuLink
@@ -68,7 +36,7 @@ export function MenuDesktop() {
                         href="/"
                       >
                         <DollarSign />
-                        <div className="mb-2 mt-4 text-lg font-medium">
+                        <div className="mb-2 mt-4 text-muted-foreground text-lg font-medium">
                           Você está perdendo dinheiro
                         </div>
                         <p className="text-sm leading-tight text-muted-foreground">
@@ -100,13 +68,13 @@ export function MenuDesktop() {
               <NavigationMenuTrigger>Contato</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {contact.map((component) => (
+                  {contactList.map((contact) => (
                     <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
+                      key={contact.title}
+                      title={contact.title}
+                      href={contact.href}
                     >
-                      {component.description}
+                      {contact.description}
                     </ListItem>
                   ))}
                 </ul>
