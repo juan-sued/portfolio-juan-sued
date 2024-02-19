@@ -29,17 +29,22 @@ export function MenuDesktop() {
                   <li className="row-span-3">
                     <NavigationMenuLink
                       asChild
-                      className="bg-local-landing-page animate__animated animate__fadeIn transition-all duration-1000"
+                      className="bg-local-landing-page   animate__animated animate__fadeIn transition-all duration-1000"
                     >
                       <a
-                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        className="flex gap-4 h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                         href="/"
                       >
-                        <DollarSign />
-                        <div className="mb-2 mt-4 text-muted-foreground text-lg font-medium">
-                          Você está perdendo dinheiro
-                        </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
+                        <DollarSign
+                          className="text-white drop-shadow"
+                          strokeWidth={3}
+                        />
+                        <h1 className="  text-2xl text-white font-normal drop-shadow shadow-black">
+                          Você está
+                          <strong className="text-red-500 "> PERDENDO </strong>
+                          dinheiro
+                        </h1>
+                        <p className="text-sm leading-tight font-medium text-slate-300">
                           Conquiste visitantes com landing pages envolventes e
                           persuasivas.
                         </p>

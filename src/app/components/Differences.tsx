@@ -26,7 +26,7 @@ export default function Differences() {
 
 function CardDifference({ icon, title, description }: IDifferenceItem) {
   return (
-    <Card className="p-6 max-w-[300px]">
+    <Card className="p-6 max-w-[300px] hover:shadow-2xl  hover:scale-105 transition-all duration-500">
       <figure className="grid gap-2">
         <div className="p-6 text-[#ADD8E6]  dark:text-blueTheme-500  bg-blueTheme-500 dark:bg-[#ADD8E6] w-fit rounded-full h-20">
           {icon}

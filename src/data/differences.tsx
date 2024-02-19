@@ -21,9 +21,9 @@ export const differencesList: IDifferenceItem[] = [
   },
 
   {
-    title: 'Metodologia Ágil',
+    title: 'Gestão Ágil',
     description:
-      'Práticas ágeis para garantir um desenvolvimento eficiente e adaptável, colaborando de perto com você para entregas rápidas e alinhadas às suas expectativas.',
+      'Uma série de ferramentas e metodologias ágeis para dar mais transparência  para os clientes e tornar o processo de desenvolvimento mais eficiente.',
     icon: <PackageCheckIcon className="w-full h-full" />,
   },
 ]
