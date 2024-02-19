@@ -67,11 +67,13 @@
 }
 
 .bg-local-landing-page {
-  background: linear-gradient(to bottom right, transparent, transparent), linear-gradient(to bottom left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)), url('/assets/landing-page.jpeg');
+  background: linear-gradient(to bottom right, transparent, transparent), linear-gradient(to bottom left, rgba(0, 0, 0, .2), rgba(0, 0, 0, 1)), url('/assets/landing-page.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
 
 
 .lightBackground{
@@ -99,7 +101,7 @@ overflow-x: hidden;
  @media (min-width: 768px) {
   /* width */
   ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
     overflow-y: scroll;
     display: block;
     scrollbar-width: thin;
