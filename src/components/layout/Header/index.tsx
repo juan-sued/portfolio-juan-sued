@@ -35,9 +35,9 @@ export default function Header() {
       <header
         className={cn(
           'p-6 fixed top-0 left-0 w-full flex justify-between z-10 transition-all h-[96px] animate__animated animate__fadeInDown',
-          scrollDirection === 'down'
+          scrollDirection === 'down' && scrollPosition > 0
             ? 'h-0 overflow-hidden p-0'
-            : 'bg-opacity-70 backdrop-blur-md dark:bg-opacity-90',
+            : `${scrollPosition === 0 ? '' : ' bg-opacity-70 backdrop-blur-md dark:bg-opacity-90 '}`,
         )}
       >
         <LogoAndName />

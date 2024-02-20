@@ -1,3 +1,4 @@
+import TitleSection from '@/components/shared/TitleSection'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import {
@@ -13,12 +14,10 @@ export default function Services() {
   return (
     <>
       <section className="differences  w-full flex flex-col items-center  ">
-        <div className="w-full flex justify-center md:px-24">
-          <h1 className="text-5xl font-bold drop-shadow text-start ">
-            Expertise para oferecer as melhores soluções para os seus desafios
-            de negócio
-          </h1>
-        </div>
+        <TitleSection
+          title=" Expertise para oferecer as melhores soluções para os seus desafios de
+          negócio"
+        />
 
         <Carousel
           opts={{
