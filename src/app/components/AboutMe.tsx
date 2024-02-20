@@ -32,7 +32,7 @@ export default function AboutMe() {
   return (
     <>
       <section className="w-full flex justify-center">
-        <div className="contentIntroduction mt-[78px] sm:mt-[70px] w-[90%] max-w-[800px]   p-2  backdrop-blur-md  rounded-3xl shadow-shadow-border-white  border border-white border-opacity-10">
+        <div className="contentIntroduction mt-[160px] sm:mt-[70px] w-[90%] max-w-[800px]   p-2  backdrop-blur-md  rounded-3xl shadow-shadow-border-white  border border-white border-opacity-10">
           <div className="contentIntroduction w-full h-full p-6 blur-radial-gradient border rounded-2xl border-white border-opacity-10">
             <section className="w-full flex flex-col items-center gap-6">
               <div className="w-fit h-fit  p-2  backdrop-blur-md  rounded-full shadow-shadow-border-white  border border-white border-opacity-10">
@@ -90,7 +90,7 @@ export default function AboutMe() {
                 <strong> Banco BMG</strong>, <strong> SHV</strong>
                 (SuperGasBras),<strong> Banco Safra</strong>,
                 <strong> Banco Guanabara</strong>,<strong> Athena Saúde</strong>
-                , <strong> VR</strong> e<strong> Aerorporto Viracopos</strong>.
+                , <strong> VR</strong> e<strong> Aeroporto Viracopos</strong>.
               </h1>
             </section>
           </div>

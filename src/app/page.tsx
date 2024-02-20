@@ -3,6 +3,7 @@ import AboutMe from './components/AboutMe'
 import CatchPhrase from './components/CatchPhrase'
 import Differences from './components/Differences'
 import Services from './components/Services'
+import Clients from './components/Clients'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutMe />
         <Differences />
         <Services />
+        <Clients />
       </main>
     </>
   )
