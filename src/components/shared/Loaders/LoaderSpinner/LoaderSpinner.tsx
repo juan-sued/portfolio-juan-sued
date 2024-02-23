@@ -6,7 +6,9 @@ export default function LoaderSpinner() {
       <div
         className={` ${SpinnerStyles.spinner} blur-radial-gradient animate-spin`}
       >
-        <div className={`${SpinnerStyles.spinner1} bg-blueTheme-500 `}></div>
+        <div
+          className={`${SpinnerStyles.spinner1} bg-[#ADD8E6]  dark:bg-blueTheme-500 `}
+        ></div>
       </div>
     </>
   )

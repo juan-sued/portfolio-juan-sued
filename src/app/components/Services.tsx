@@ -23,7 +23,7 @@ export default function Services() {
           opts={{
             align: 'start',
           }}
-          className=" w-[99.40vw]  "
+          className="  w-[99.40vw]  "
         >
           <div className=" flex w-full justify-end gap-2 px-8 ">
             <CarouselPrevious />
@@ -57,7 +57,8 @@ export default function Services() {
 function CardService({ icon, title, description, href }: IServiceItem) {
   const link =
     href ||
-    `https://wa.me/5521984980723?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+${title}`
+    'https://wa.me/+5521984980723?text=Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20' +
+      title
 
   return (
     <Card className="hover:-translate-y-11  p-6 w-full h-full   hover:shadow-2xl   transition-all duration-500">
@@ -70,7 +71,7 @@ function CardService({ icon, title, description, href }: IServiceItem) {
           <h3 className="text-lg font-semibold">{title}</h3>
           <p className="text-muted-foreground">{description}</p>
         </figcaption>
-        <a href={link}>
+        <a target="_blank" href={link}>
           <Button variant="sucess">Saiba mais</Button>
         </a>
       </figure>

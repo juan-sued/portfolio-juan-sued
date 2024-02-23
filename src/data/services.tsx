@@ -11,7 +11,7 @@ export interface IServiceItem {
   icon: ReactNode
   title: string
   description: string
-  href?: string
+  href: string
 }
 export const servicesList: IServiceItem[] = [
   {

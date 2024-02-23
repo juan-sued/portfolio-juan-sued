@@ -1,6 +1,7 @@
 'use client'
-import { InputHTMLAttributes, useEffect, useState } from 'react'
 import './SwitcherSunAndMoon.css'
+import { InputHTMLAttributes, useEffect, useState } from 'react'
+
 import {
   Tooltip,
   TooltipContent,

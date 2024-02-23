@@ -51,17 +51,20 @@ export function MenuDesktop() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/docs" title="Landing Pages">
+                  <ListItem
+                    href="https://wa.me/+5521984980723?text=Quero%20saber%20mais%20sobre%20Landing%20Pages"
+                    title="Landing Pages"
+                  >
                     Impulsionam vendas em até 47%, conversões 80%, leads 55%.
                   </ListItem>
                   <ListItem
-                    href="/docs/installation"
+                    href="https://wa.me/+5521984980723?text=Quero%20saber%20mais%20sobre%20Sites%20Institucionais"
                     title="Sites Institucionais"
                   >
                     Confiança, visibilidade e crescimento para sua marca.
                   </ListItem>
                   <ListItem
-                    href="/docs/primitives/typography"
+                    href="https://wa.me/+5521984980723?text=Quero%20saber%20mais%20sobre%20Loja%20Virtual"
                     title="Loja Virtual"
                   >
                     Potencialize lucros, conquiste mercados e fidelize clientes.
@@ -77,7 +80,11 @@ export function MenuDesktop() {
                     <ListItem
                       key={contact.title}
                       title={contact.title}
-                      href={contact.href}
+                      href={
+                        contact.href +
+                        `?text=Quero%20saber%20mais%20sobre%20` +
+                        contact.title
+                      }
                     >
                       {contact.description}
                     </ListItem>
@@ -86,16 +93,16 @@ export function MenuDesktop() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <Link href="#clients" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Clientes
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <Link href="#about-me" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Sobre mim
+                  Sobre
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -115,6 +122,7 @@ const ListItem = React.forwardRef<
       <NavigationMenuLink asChild>
         <a
           ref={ref}
+          target="_blank"
           className={cn(
             'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
             className,

@@ -13,7 +13,10 @@ import { clientsList } from '@/data/clients'
 export default function Clients() {
   return (
     <>
-      <section className="differences  w-full flex flex-col items-center  ">
+      <section
+        id="clients"
+        className="differences  w-full flex flex-col items-center  "
+      >
         <TitleSection
           title="Confira a opinião de quem já conta com a expertise e a parceria da
             EventHorizon"

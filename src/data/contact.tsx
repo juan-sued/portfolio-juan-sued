@@ -17,7 +17,7 @@ export const contactList: IContactItem[] = [
   {
     icon: <MessageCircleIcon size={20} />,
     title: 'WhatsApp',
-    href: 'https://w.app/yAmfrN',
+    href: 'https://wa.me/+5521984980723',
     description: 'Fale comigo pelo WhatsApp',
   },
   {
