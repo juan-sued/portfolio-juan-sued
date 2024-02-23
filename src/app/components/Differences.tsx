@@ -4,11 +4,7 @@ import { IDifferenceItem, differencesList } from '@/data/differences'
 export default function Differences() {
   return (
     <>
-      <section className="differences py-36 w-full flex flex-col items-center gap-36 ">
-        <h1 className="text-5xl font-bold drop-shadow">
-          Agilidade, flexibilidade e robustez
-        </h1>
-
+      <section className="differences py-10 w-full flex flex-col items-center ">
         <div className="rowCardsDifferences flex flex-col md:flex-row gap-4">
           {differencesList.map((difference, index) => (
             <CardDifference

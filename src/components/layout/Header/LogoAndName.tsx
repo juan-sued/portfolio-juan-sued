@@ -9,9 +9,10 @@ export default function LogoAndName() {
       >
         <Image
           src="/assets/logo.png"
-          width="1080"
-          height="1080"
-          className="animate__animated animate__fadeInLeftBig w-16 min-w-[64px]"
+          width="0"
+          height="0"
+          sizes="100vw"
+          className="animate__animated animate__fadeInLeftBig w-16 min-w-[64px] h-auto"
           alt="Ir para Home"
           loading="eager"
         />
