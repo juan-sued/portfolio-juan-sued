@@ -9,8 +9,9 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { contactList } from '@/data/contact'
 
-import { CrownIcon, LogIn, Menu, Settings, User } from 'lucide-react'
+import { Code2Icon, CrownIcon, HelpCircleIcon, Menu, User } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
 
@@ -44,24 +45,29 @@ export function MenuMobile() {
                 </DropdownMenuItem>
               </Link>
 
-              <Link href="/ranking">
+              <Link href="#services">
+                <DropdownMenuItem className="cursor-pointer">
+                  <Code2Icon className="mr-2 h-4 w-4" />
+                  <span>Serviços</span>
+                  <DropdownMenuShortcut>⌘3</DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </Link>
+              <Link href="#clients">
                 <DropdownMenuItem className="cursor-pointer">
                   <CrownIcon className="mr-2 h-4 w-4" />
-                  <span>Ranking</span>
+                  <span>Clientes</span>
+                  <DropdownMenuShortcut>⌘3</DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </Link>
+              <Link href="#about-me">
+                <DropdownMenuItem className="cursor-pointer">
+                  <HelpCircleIcon className="mr-2 h-4 w-4" />
+                  <span>Sobre</span>
                   <DropdownMenuShortcut>⌘3</DropdownMenuShortcut>
                 </DropdownMenuItem>
               </Link>
             </DropdownMenuGroup>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <Link href="/config">
-                <DropdownMenuItem className="cursor-pointer">
-                  <Settings className="mr-2 h-4 w-4" />
-                  <span>Configurações</span>
-                  <DropdownMenuShortcut>⌘C</DropdownMenuShortcut>
-                </DropdownMenuItem>
-              </Link>
-            </DropdownMenuGroup>
+
             <DropdownMenuSeparator />
             <DropdownMenuItem
               className="justify-between cursor-pointer"
@@ -72,10 +78,14 @@ export function MenuMobile() {
             </DropdownMenuItem>
 
             <DropdownMenuSeparator />
-            <Link href="/sign-in">
+            <Link href={contactList[0].href}>
               <DropdownMenuItem className="cursor-pointer">
-                <LogIn className="mr-2 h-4 w-4" />
-                Entrar <DropdownMenuShortcut>⌘L</DropdownMenuShortcut>
+                <div className="flex gap-2">
+                  {contactList[0].icon}
+                  Entrar em contato
+                </div>
+
+                <DropdownMenuShortcut>⌘L</DropdownMenuShortcut>
               </DropdownMenuItem>
             </Link>
           </DropdownMenuContent>
