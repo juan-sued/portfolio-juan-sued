@@ -4,6 +4,7 @@ import Differences from './components/Differences'
 import Services from './components/Services'
 import Clients from './components/Clients'
 import AboutMe from './components/AboutMe'
+import Banners from './components/Banners'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
 
       <main className="grid  gap-14 mt-[70px] sm:mt-16 w-full ">
         <CatchPhrase />
+        <Banners />
         <Differences />
         <Services />
         <Clients />
