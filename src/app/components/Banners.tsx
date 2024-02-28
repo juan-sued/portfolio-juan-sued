@@ -7,34 +7,32 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 import { IAdvertisementsItem, advertisementsList } from '@/data/advertisements'
-import { cn } from '@/lib/utils'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Banners() {
   return (
     <>
       <section
-        id="services"
-        className="differences  w-full flex flex-col items-center  "
+        id="adverts"
+        className="adverts mt-[-10px] md:mt-[-40px]   w-full flex flex-col items-center  "
       >
         <Carousel
           opts={{
-            align: 'start',
+            align: 'center',
+            loop: true,
           }}
-          className="  w-[99.40vw]  "
+          className="   w-full  "
         >
-          <div className=" flex w-full justify-end gap-2 px-8 ">
-            <CarouselPrevious />
+          <div className="   hidden md:flex w-full justify-end gap-2 px-8 ">
+            <CarouselPrevious className="" />
             <CarouselNext />
           </div>
 
-          <CarouselContent className=" py-12 pl-2 md:pl-20 ">
+          <CarouselContent className=" py-12  -ml-20 ">
             {advertisementsList.map((advertisement, index) => (
-              <CarouselItem
-                key={index}
-                className=" basis-80 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 min-h-[400px] "
-              >
-                <div className="mx-5 h-full">
+              <CarouselItem key={index} className="pl-20  basis-1/1  ">
+                <div className="w-full h-fit">
                   <CardBanner
                     key={index}
                     image={advertisement.image}
@@ -52,13 +50,17 @@ export default function Banners() {
 
 function CardBanner({ image, href }: IAdvertisementsItem) {
   return (
-    <Link href={href}>
-      <Card
-        className={cn(
-          'hover:-translate-y-11  p-6 w-full h-full   hover:shadow-2xl   transition-all duration-500',
-          `bg-[url(${image})]`,
-        )}
-      ></Card>
+    <Link href={href} target="_blank">
+      <Card className=" shadow hover:shadow-lg transition-all delay-500 overflow-hidden  border-none  flex justify-center items-center   ">
+        <Image
+          src={image}
+          alt="banner"
+          width="0"
+          height="0"
+          sizes="100vw"
+          className=" w-full h-full object-cover max-w-[90vw] "
+        />
+      </Card>
     </Link>
   )
 }

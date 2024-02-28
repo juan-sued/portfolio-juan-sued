@@ -8,7 +8,7 @@ export default function AboutMe() {
     <>
       <section
         id="about-me"
-        className="differences  w-full flex flex-col items-center  py-20 gap-20"
+        className="differences  w-full flex flex-col items-center   gap-20"
       >
         <TitleSection title="Nosso time conta com hábeis e experientes profissionais " />
 

@@ -16,7 +16,7 @@ export const tecnologiesList: ITecnologyItem[] = [
   {
     title: 'React',
     description:
-      'Tenho experiência no desenvolvimento front-end utilizando o framework e seu ecossistema (Webpack, CRA, Vite.js e Next.js).',
+      'Sou um desenvolvedor Full-Stack formado pela Driven Education e atualmente ativo na Lumis EIP Tecnologia da Informação. Destaco-me por minha especialização em React, tendo contribuído para o desenvolvimento de portais empresariais renomados. Minha prática envolve ferramentas como Webpack, CRA, Vite.js e Next.js, garantindo eficiência e escalabilidade. Além disso, mantenho-me atualizado, participando de cursos para aprimorar minhas habilidades em React',
 
     svg: (
       <svg viewBox="0 0 128 128">
@@ -42,7 +42,7 @@ export const tecnologiesList: ITecnologyItem[] = [
   {
     title: 'Tailwind',
     description:
-      'Tenho conhecimentos intermediários em CSS3 (tenho mais facilidade para construir layouts com Flexbox). Sei iniciar um projeto com NPM ou Yarn, compilar SASS proprietário/personalizado e de frameworks CSS com node-sass e gulp-sass e automatizar as tarefas com Gulp. Dentre ferramentas front-end que tenho mais familiaridade: HTML5, CSS3, Git/GitHub, NPM/Yarn, SCSS/Sass, Bootstrap, TailwindCSS, Vite.js, Webpack.',
+      'Possuo habilidades avançadas no uso do TailwindCSS, o que me permite desenvolver interfaces eficientes e esteticamente agradáveis. Minha experiência inclui a criação de layouts complexos e a customização de componentes, proporcionando uma experiência de usuário aprimorada. Estou confiante em contribuir positivamente para projetos que exijam o conhecimento refinado do TailwindCSS.',
 
     svg: (
       <svg
@@ -77,7 +77,7 @@ export const tecnologiesList: ITecnologyItem[] = [
   {
     title: 'UI/UX',
     description:
-      'Tenho conhecimentos básicos das teorias e do Workflow do UI Design e tenho conhecimentos intermediários em Figma para criação de Design de Interface e prototipação. Próximas metas é concluir os cursos: UI Expert do Lucas Assis, e UI Design Avançado da Origamid.',
+      'Possuo conhecimentos nas teorias e no Workflow do UI Design, habilidades em Figma para criação de Designs de Interface e prototipação. Tenho como próximas metas concluir os cursos "UI Expert" ministrado por Lucas Assis e "UI Design Avançado" oferecido pela Origamid. Essa base teórica e prática reflete meu comprometimento em aprimorar constantemente minhas habilidades no campo do design, buscando sempre a excelência e a atualização nas melhores práticas da área.',
 
     svg: (
       <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +124,7 @@ export const tecnologiesList: ITecnologyItem[] = [
   {
     title: 'WordPress',
     description:
-      'Entre Novembro de 2019 até Dezembro de 2020 estagiei em uma empresa de Marketing Jurídiro onde eu era responsavel por converter os arquivos estáticos (HTML, CSS e JavaScript) do site que um desenvolvedor criava em um tema WordPress/PHP usado como CSM para sites institucionais de advogados. Também fazia o deploy com Hostgator.',
+      'Entre novembro de 2019 e dezembro de 2020, tive a oportunidade de estagiar em uma renomada empresa de Marketing Jurídico. Durante essa experiência, desempenhei um papel fundamental ao converter os arquivos estáticos (HTML, CSS e JavaScript) de um site, desenvolvido por um programador, em um tema WordPress/PHP. Esse tema foi estrategicamente utilizado como CMS para criar websites institucionais para escritórios de advocacia. Além disso, liderei o processo de deploy utilizando a plataforma HostGator, contribuindo para a eficiência e sucesso dos projetos. Estou entusiasmado(a) para trazer minhas habilidades e experiência para sua equipe, promovendo soluções inovadoras e agregando valor aos seus projetos.',
 
     svg: (
       <svg
@@ -174,7 +174,7 @@ export const tecnologiesList: ITecnologyItem[] = [
   {
     title: 'Flutter',
     description:
-      'Criei duas bases de conhecimentos com esta stack, e alguns projetos avulsos. Tenho acompanhado o Flutter desde sua segunda versão.',
+      'Utilizando esta stack, desenvolvi duas bases de conhecimento e diversos projetos avulsos. Além disso, mantenho-me atualizado com as últimas versões do Flutter, acompanhando seu progresso desde a segunda versão. Essas experiências destacam minha habilidade em aplicar efetivamente essas tecnologias em projetos práticos, resultando em soluções inovadoras e eficientes.',
 
     svg: (
       <svg
@@ -233,7 +233,7 @@ export const tecnologiesList: ITecnologyItem[] = [
   {
     title: 'Bancos de Dados',
     description:
-      'Minha expertise abrange PostgreSQL, MySQL e MongoDB, destacando-me em otimização de consultas, modelagem de dados eficiente, design de esquemas complexos e estratégias para dados não estruturados. Essas habilidades versáteis me capacitam a oferecer soluções sólidas e eficientes em diversos contextos de gerenciamento de bancos de dados.',
+      'Minha experiência abrange PostgreSQL, MySQL e MongoDB, destacando-me na otimização de consultas, modelagem eficiente de dados, design de esquemas complexos e estratégias para lidar com dados não estruturados. Essas habilidades versáteis me capacitam a fornecer soluções sólidas e eficientes em diversos contextos de gerenciamento de bancos de dados. Estou preparado para contribuir de maneira significativa em projetos que demandem expertise em bases de dados.',
 
     svg: (
       <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
@@ -267,7 +267,7 @@ export const tecnologiesList: ITecnologyItem[] = [
   {
     title: 'DevOps',
     description:
-      'Não sou DevOps mas tenho conhecimentos em tecnologias relacionadas: tenho conhecimentos básicos de Docker (uso bastante o Laravel Sail), e estou estudando para tirar a certificação da AWS Cloud Practitioner. Inicialmente fiz o deploy deste portfólio com a AWS Amplify + AWS Route53 e já utilizei os serviço de AWS S3 junto com Laravel para armazenar imagens de uma base de conhecimento',
+      'Embora não me identifique como DevOps, possuo competências em tecnologias correlatas. Possuo conhecimentos fundamentais em Docker, com destaque para o uso frequente do Laravel Sail. Além disso, estou em processo de estudo para obter a certificação AWS Cloud Practitioner. Inicialmente, realizei o deploy deste portfólio utilizando AWS Amplify + AWS Route53, mas alterei para hostinger por convêniencia.',
 
     svg: (
       <svg

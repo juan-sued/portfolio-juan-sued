@@ -16,7 +16,7 @@ export const differencesList: IDifferenceItem[] = [
   {
     title: 'Suporte 24h',
     description:
-      'Suporte 24h para atender suas necessidades a qualquer momento, garantindo uma experiência confiável e ágil.',
+      'Para atender suas necessidades a qualquer momento, garantindo uma experiência confiável e ágil.',
     icon: <HeartHandshakeIcon className="w-full h-full" />,
   },
 
