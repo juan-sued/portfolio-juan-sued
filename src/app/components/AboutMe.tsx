@@ -27,7 +27,7 @@ export default function AboutMe() {
         <div className=" mt-[160px] sm:mt-[70px] w-[90%] max-w-[800px]   p-2  backdrop-blur-md  rounded-3xl shadow-shadow-border-white  border border-white border-opacity-10">
           <div className=" w-full h-full p-6 blur-radial-gradient border rounded-2xl border-white border-opacity-10">
             <h1 className="relative h-0 top-[-120px] sm:top-[-75px] overflow-visible font-bold drop-shadow text-5xl">
-              Por que o escolher?
+              Por que me escolher?
             </h1>
             <div className="w-full grid gap-2">
               <p className="w-full">
@@ -37,14 +37,13 @@ export default function AboutMe() {
               </p>
 
               <p>
-                Trabalhou na maior plataforma DXP(Plataforma de Digital
+                Trabalhei na maior plataforma DXP(Plataforma de Digital
                 Experience) do Brasil,
                 <strong> Lumis </strong>, contribuindo no desenvolvimento de
                 portais para empresas renomadas.
               </p>
               <p>
-                Alguns de seus principais clientes incluem
-                <strong> B3</strong>
+                Algumas delas são: <strong> B3</strong>
                 (Bolsa de Valores do Brasil), <strong> Grupo Alliance</strong>,
                 <strong> Petrobras</strong>, <strong> Sulamérica</strong>,
                 <strong> Banco BMG</strong>, <strong> SHV</strong>
@@ -58,7 +57,7 @@ export default function AboutMe() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline">Falar com Juan Sued</Button>
+                  <Button variant="outline">Fale comigo</Button>
                 </a>
               </div>
             </div>

@@ -5,6 +5,7 @@ import 'animate.css'
 import { ReactNode } from 'react'
 import Header from '@/components/layout/Header'
 import Providers from '@/providers/Index'
+import Footer from '@/components/layout/Footer'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Providers>
           <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

@@ -14,8 +14,8 @@ export default function Banners() {
   return (
     <>
       <section
-        id="adverts"
-        className=" mt-[-10px] md:mt-[-40px]   w-full flex flex-col items-center  "
+        id="advertisements"
+        className=" mt-[-10px]   w-full flex flex-col items-center  "
       >
         <Carousel
           opts={{
@@ -58,7 +58,7 @@ function CardBanner({ image, href }: IAdvertisementsItem) {
           width="0"
           height="0"
           sizes="100vw"
-          className=" w-full h-full object-cover max-w-[90vw] "
+          className=" w-full h-full object-cover max-w-[90vw]  rounded-lg"
         />
       </Card>
     </Link>
