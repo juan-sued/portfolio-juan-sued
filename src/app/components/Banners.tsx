@@ -22,7 +22,7 @@ export default function Banners() {
             align: 'center',
             loop: true,
           }}
-          className="   w-full  "
+          className="w-full  "
         >
           <div className="   hidden md:flex w-full justify-end gap-2 px-8 ">
             <CarouselPrevious className="" />
