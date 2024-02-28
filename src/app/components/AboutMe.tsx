@@ -10,7 +10,7 @@ export default function AboutMe() {
         id="about-me"
         className="differences  w-full flex flex-col items-center   gap-20"
       >
-        <TitleSection title="Nosso time conta com hábeis e experientes profissionais " />
+        <TitleSection title="Sobre mim" />
 
         <Orbitals />
 
