@@ -13,7 +13,10 @@ import { IServiceItem, servicesList } from '@/data/services'
 export default function Services() {
   return (
     <>
-      <section className="differences  w-full flex flex-col items-center  ">
+      <section
+        id="services"
+        className="differences  w-full flex flex-col items-center  "
+      >
         <TitleSection
           title=" Expertise para oferecer as melhores soluções para os seus desafios de
           negócio"

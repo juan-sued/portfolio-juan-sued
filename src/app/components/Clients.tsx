@@ -15,7 +15,7 @@ export default function Clients() {
     <>
       <section
         id="clients"
-        className="differences  w-full flex flex-col items-center  "
+        className="differences  w-full flex flex-col items-center gap-5 "
       >
         <TitleSection
           title="Confira a opinião de quem já conta com a expertise e a parceria da
@@ -38,7 +38,7 @@ export default function Clients() {
             {clientsList.map((client, index) => (
               <CarouselItem
                 key={index}
-                className=" basis-80 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 min-h-[400px] "
+                className=" basis-80 sm:basis-1/2 md:basis-1/3 lg:basis-1/4  "
               >
                 <div className="mx-5 h-full">
                   <DoubleFaceHoverCard
