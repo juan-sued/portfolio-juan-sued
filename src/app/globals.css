@@ -87,12 +87,23 @@ background-size: cover;
   background-position: center;
   box-shadow: inset;
 }
+.light-bg-local-bg-galaxy {
+  
+  background: 
+  radial-gradient(ellipse at center, transparent 0%, rgb(173, 216, 230, 1) 70%),
+  url('/assets/galaxy.gif');
+
+background-size: cover;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset;
+}
 
 .lightBackground{
   background: linear-gradient(to bottom, transparent, transparent), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(173, 216, 230, 1)), url('/assets/ondas.gif');
   background-size: cover;
-
-
 }
 
 /* width */
