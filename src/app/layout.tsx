@@ -13,7 +13,8 @@ const poppins = Poppins({
 })
 export const metadata: Metadata = {
   title: 'EventHorizon by Juan Sued',
-  description: 'Eficiência em peso',
+  description: 'Um horizonte de possibilidades',
+  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

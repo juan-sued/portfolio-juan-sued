@@ -15,7 +15,7 @@ export default function Banners() {
     <>
       <section
         id="advertisements"
-        className=" mt-[-10px]   w-full flex flex-col items-center  "
+        className=" mt-[-40px]   w-full flex flex-col items-center  "
       >
         <Carousel
           opts={{
