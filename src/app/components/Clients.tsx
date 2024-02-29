@@ -13,8 +13,11 @@ import { clientsList } from '@/data/clients'
 export default function Clients() {
   return (
     <>
-      <div className=" relative overflow-visible h-0 flex w-full  shadow-inner ">
-        <div className="bg-local-bg-galaxy h-[100vh] w-full"></div>
+      <div className="flex dark:hidden relative overflow-visible h-0  w-full  shadow-inner ">
+        <div className="light-bg-local-bg-galaxy   h-[660px] md:h-[100vh] w-full"></div>
+      </div>
+      <div className=" hidden dark:flex relative overflow-visible h-0  w-full  shadow-inner ">
+        <div className="bg-local-bg-galaxy h-[660px] md:h-[100vh] w-full"></div>
       </div>
       <section
         id="clients"

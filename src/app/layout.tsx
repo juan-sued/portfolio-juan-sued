@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} animate__animated animate__bigFadeIn overflow-x-auto bg-[#ADD8E6]  dark:bg-blueTheme-500  text-zinc-900 weig dark:text-slate-50 
+        className={`${poppins.className} animate__animated animate__fadeIn overflow-x-auto bg-[#ADD8E6]  dark:bg-blueTheme-500  text-zinc-900 weig dark:text-slate-50 
         `}
       >
         <Providers>

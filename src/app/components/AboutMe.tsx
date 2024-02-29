@@ -26,9 +26,6 @@ export default function AboutMe() {
         </div>
         <div className=" mt-[160px] sm:mt-[70px] w-[90%] max-w-[800px]   p-2  backdrop-blur-md  rounded-3xl shadow-shadow-border-white  border border-white border-opacity-10">
           <div className=" w-full h-full p-6 blur-radial-gradient border rounded-2xl border-white border-opacity-10">
-            <h1 className="relative h-0 top-[-120px] sm:top-[-75px] overflow-visible font-bold drop-shadow text-5xl">
-              Por que me escolher?
-            </h1>
             <div className="w-full grid gap-2">
               <p className="w-full">
                 Formado pela <strong> Driven Education</strong> e graduando em
