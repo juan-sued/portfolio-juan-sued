@@ -17,10 +17,7 @@ export default function Services() {
         id="services"
         className="differences  w-full flex flex-col items-center  "
       >
-        <TitleSection
-          title=" Expertise para oferecer as melhores soluções para os seus desafios de
-          negócio"
-        />
+        <TitleSection title="Serviços" />
 
         <Carousel
           opts={{
