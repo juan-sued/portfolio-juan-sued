@@ -13,9 +13,12 @@ import { clientsList } from '@/data/clients'
 export default function Clients() {
   return (
     <>
+      <div className=" relative overflow-visible h-0 flex w-full  shadow-inner ">
+        <div className="bg-local-bg-galaxy h-[100vh] w-full"></div>
+      </div>
       <section
         id="clients"
-        className="differences  w-full flex flex-col items-center gap-5 "
+        className=" differences  w-full flex flex-col items-center gap-5 "
       >
         <TitleSection title="Clientes" />
 

@@ -15,7 +15,7 @@ export default function DoubleFaceHoverCard({
   return (
     <>
       <div className="card-container">
-        <div className="card">
+        <div className="card  backdrop-blur-md">
           <div className="front-content p-6">
             <p>{title}</p>
           </div>

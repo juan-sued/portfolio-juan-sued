@@ -15,9 +15,7 @@ export default function Home() {
       <main className="grid  gap-14 mt-[70px] sm:mt-16 w-full ">
         <CatchPhrase />
         <Banners />
-
         <World />
-
         <Differences />
         <Services />
         <Clients />
