@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="hidden dark:flex">
         <BackGroundImage />
       </div>
-      <section className="border-t-2 gap-20 boder-slate-200 border-slate-900 blur-radial-gradient backdrop-blur-md  bg-blueTheme-500 dark:bg-opacity-90 mt-[338px] md:mt-[360px]  p-20 flex flex-col items-center  w-full">
+      <section className="border-t-2 gap-20 boder-slate-200 border-slate-900 blur-radial-gradient backdrop-blur-md  bg-blueTheme-500 dark:bg-opacity-90 mt-[458px]  md:mt-[360px]  p-20 flex flex-col items-center  w-full">
         <div className="flex flex-col md:flex-row w-full">
           <div className=" flex flex-col gap-6 py-6 md:py-0 justify-between w-full text-white ">
             <LogoAndName />

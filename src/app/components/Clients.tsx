@@ -17,10 +17,7 @@ export default function Clients() {
         id="clients"
         className="differences  w-full flex flex-col items-center gap-5 "
       >
-        <TitleSection
-          title="Confira a opinião de quem já conta com a expertise e a parceria da
-            EventHorizon"
-        />
+        <TitleSection title="Clientes" />
 
         <Carousel
           opts={{
